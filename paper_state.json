@@ -1,8 +1,16 @@
 {
-  "balance": 1000,
-  "positions": {},
+  "balance": 950,
+  "positions": {
+    "3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump": {
+      "symbol": "GROKIA",
+      "entry": 0.002338,
+      "cost": 50,
+      "qty": 21385.799828913605,
+      "ts": 1795496396.973567
+    }
+  },
   "history": [],
-  "day": "2026-11-23",
+  "day": "2026-11-24",
   "day_pnl": 0.0,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
@@ -32,6 +40,32 @@
     "pHicNjX5U2Aq9E2BEnW56VLtNyv6NTXWZ485KJgDW9C",
     "Gb5PN7CtQ4AhmLAdnpPNTVHDZJrRmGqRsGbEEsqMpump",
     "CiZbjDmkr4Q9EwoTAjPfj7hYRqTrReqFG9shqMeFpump",
-    "C56bqSxEDTyAgZmL9tcA6j3nYvFMP1wvyTsVghBBpump"
+    "C56bqSxEDTyAgZmL9tcA6j3nYvFMP1wvyTsVghBBpump",
+    "9SzSjbqTRb8f6vVeL5tUBwpppJFwLf1BfYkUwFeEpump",
+    "9oxUBRyk9EXfQHMchya45p3xsF2fbNzzDUNKzEfKpump",
+    "ELkJSMRUBboeBDKDaBzTfFzqZZ1hzqAASFzFK4wfDtz1",
+    "EaiNiPA791st8dtYYuRKqU4M2wetyRdRzk5K2VT1pump",
+    "7sCw9NvfSxgMaj4Q7gGWBZWkXPtmaoji82Zr61UTpump",
+    "8EakoV8ox4RMK9R8r59X74iiK5bHLmYmgVyBeK29pump",
+    "3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump",
+    "6kdrep4bs5HjY7uGQ4cSnNAdAxspTBivQVm2ZueZpump",
+    "8ijfaD31UNbhtucEXMjZu5vsdG7DSSEQYDZJQDGNpump",
+    "GpzEWYo4bRV2cPPaT6kMuvesbs5mvjk2Z8eNQv7Hpump",
+    "RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump",
+    "3mEP7FrY1uxTS5ysSAdEEkMxc2eGMCjE4wMWdQQLvdaK",
+    "vkXopjfszTcNwBF3RiW79aKFWJqAFGzur56m8fmbzoe",
+    "6Jogd7dhbcmMtsbVBFPTxqeYpAnyx5qhNRzHbzCcpump",
+    "4n7rKycAxGqtifiaKm9A3vhPJKkpvSiUDM3ZjGPopump",
+    "D67RnEuhQut5PSkiyAvu8NFQZzFmSNjBQaiHRKnppump",
+    "5LDowscYVD3a6ZS4m8gCqG5nU16eLTwRXhciFi1bpump",
+    "81F3a7CihhMQEsk4TnEs34XVQgRr8QcbghBjNAZnpump",
+    "7B72JE9fgEiwGfpj3BuAMCC8NhtuyFbi7d9E8mWWpump",
+    "GVzahMEr1XjpE3aoRQvPViuVKWHSXASpdDAh7xJypump",
+    "3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump",
+    "7C3b8kPY4RCDuA7WNT7Ge6a34CwX9h1DeyVFn2ajpump",
+    "Bf9BsNw4NEQR4L28BApWnxvCy1gk9wPBnK8xy4Khpump",
+    "EugsQhveCEQGoapBEUrMQxJxWNdshJrSmaLtN4ArRMM1",
+    "4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump",
+    "2TxPh38YzN1Hn9F2vigaKDyPrcMJmt5aFMyvxTYFUF2u"
   ]
 }
