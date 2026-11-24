@@ -1,17 +1,23 @@
 {
-  "balance": 950,
+  "balance": 958.5115483319076,
   "positions": {
-    "3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump": {
-      "symbol": "GROKIA",
-      "entry": 0.002338,
+    "4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn": {
+      "symbol": "Memeployed",
+      "entry": 9.356e-05,
       "cost": 50,
-      "qty": 21385.799828913605,
-      "ts": 1795496396.973567
+      "qty": 534416.4172723385,
+      "ts": 1795534451.2915125
     }
   },
-  "history": [],
+  "history": [
+    {
+      "symbol": "GROKIA",
+      "pnl": 8.51,
+      "reason": "tempo massimo (+17%)"
+    }
+  ],
   "day": "2026-11-24",
-  "day_pnl": 0.0,
+  "day_pnl": 8.511548331907626,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
     "DGapQqqL7rQEdH4QcY9oW4fNhDZxYeDVfkAdwNVNpump",
@@ -66,6 +72,28 @@
     "Bf9BsNw4NEQR4L28BApWnxvCy1gk9wPBnK8xy4Khpump",
     "EugsQhveCEQGoapBEUrMQxJxWNdshJrSmaLtN4ArRMM1",
     "4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump",
-    "2TxPh38YzN1Hn9F2vigaKDyPrcMJmt5aFMyvxTYFUF2u"
+    "2TxPh38YzN1Hn9F2vigaKDyPrcMJmt5aFMyvxTYFUF2u",
+    "GtDfJKk62DKwdBmmHh7s3fMmzvwirdgjtLg2PVHq43bt",
+    "ArTHx2XxPadBjkJw9WacfwPTEoaeG5jMakX26tzEpump",
+    "Hb4kF1LyTxFD3nRCVbgegQv2oo2jAfK4CpTho8a9pump",
+    "DerEwFpXm6J39QCB3312fQ3b6fE3PDCWpnnEV5dwpump",
+    "EAxsoqyVTYXjCxiPmSqQ9eGqRaHERPbRPegKmErUpump",
+    "J6UxTYCafujhtsZFDVFMJmVBHozqDzKMWwpQxjwtpump",
+    "GRVQD8EA6gUwovaHFdG2Gss7UeiNyPXE868GnKAtpump",
+    "3QUrDTez1H6UyhLS5tMHBZgS79j9fJvwm7EPG2Fbpump",
+    "fiixPXZmvzFefzHmCXQG9jri2JyH8ichA3tgWENpump",
+    "6wLQwVC4q6s2LKNbbw29NQXXDPfjWhb6F3xo6QTgpump",
+    "1PPQkxYy2wUvKkUXMnDkiDrqx5Hfp2nbDju11cvHeFW",
+    "DE6jZSwe422PWGWWU5hNCUrUmPDHHhF5aVXpjFbFpump",
+    "DU9Q7K3TqLTW1xS36S45TPj3FVwym2F5wAbF5tHkpump",
+    "MX8yBPVGKEFhhJ2jZRKEWxXgWHq7ScQ9cwqQjVHmake",
+    "7k83dNQKMknKRXuAX4nT6JDNReNywUUP5LqpggyQpump",
+    "2BZQURdxckva3QqzX47RbrRCkrfnv8dSrRm6BD1RigYH",
+    "BykEjfKeLzSAen7p41nCHFwenuQ5s4fosPRzJudLpump",
+    "4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn",
+    "D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump",
+    "EzKEuCEnA2LMuP4bnDcX7akh4sSGgv3ahwkXBHRSb2S4",
+    "5Z7jsmLUBwJM9g8sKg9FfwNdRuR2bnTCcWSraWTKpump",
+    "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump"
   ]
 }
