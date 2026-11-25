@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memecoin Bot</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--tx:#e6edf3;--mut:#8b949e;--g:#3fb950;--r:#f85149;--y:#d29922}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 -apple-system,system-ui,sans-serif;padding:16px;display:flex;justify-content:center}
+.w{width:100%;max-width:460px}
+h1{font-size:17px;text-align:center;letter-spacing:3px;margin:4px 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.t{color:var(--mut);font-size:12px;letter-spacing:2px;text-align:center;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:1px 0}
+.row span:first-child{color:var(--mut)}
+.g{color:var(--g)}.r{color:var(--r)}.y{color:var(--y)}
+.ctl{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+.badge{padding:6px 16px;border-radius:8px;font-weight:700}
+.on{background:var(--g);color:#000}.off{background:var(--r);color:#fff}.wait{background:var(--y);color:#000}
+.pill{padding:6px 12px;border-radius:8px;background:#21262d;color:var(--mut);font-size:13px}
+.foot{text-align:center;color:var(--mut);font-size:12px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="w">
+  <h1>MEMECOIN BOT</h1>
+  <div class="card" id="status"></div>
+  <div class="card" id="risk"></div>
+  <div class="card" id="perf"></div>
+  <div class="card" id="acct"></div>
+  <div class="card" id="ctl"></div>
+  <div class="card" id="pos"></div>
+  <div class="card" id="hist"></div>
+  <div class="foot" id="foot"></div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sg = n => (n < 0 ? "-" : "+") + "$" + Math.abs(n).toFixed(2);
+const usd = n => "$" + n.toFixed(2);
+const cls = n => n > 0.005 ? "g" : n < -0.005 ? "r" : "";
+const row = (a, b, c = "") => `<div class="row"><span>${a}</span><span class="${c}">${b}</span></div>`;
+const box = (t, body) => `<div class="t">${t}</div>${body}`;
+const since = (h, sec) => h.filter(x => x.ts && x.ts >= Date.now() / 1000 - sec).reduce((a, x) => a + x.pnl, 0);
+
+function render(s) {
+  const m = s.meta || {};
+  const start = m.start_balance || 1000;
+  const hist = s.history || [];
+  const pos = Object.values(s.positions || {});
+  const openCost = pos.reduce((a, p) => a + p.cost, 0);
+  const openVal = pos.reduce((a, p) => a + p.qty * (p.last || p.entry), 0);
+  const floating = openVal - openCost;
+  const equity = s.balance + openVal;
+  const total = equity - start;
+  const wins = hist.filter(h => h.pnl > 0).length;
+  const winrate = hist.length ? Math.round(wins / hist.length * 100) : 0;
+  const ageMin = m.last_run ? (Date.now() / 1000 - m.last_run) / 60 : null;
+  const ageTxt = ageMin === null ? "sconosciuto"
+    : ageMin < 60 ? Math.round(ageMin) + " min fa"
+    : ageMin < 1440 ? (ageMin / 60).toFixed(1) + " ore fa"
+    : Math.round(ageMin / 1440) + " giorni fa";
+  const alive = ageMin !== null && ageMin < 720;
+
+  $("status").innerHTML = box("STATO BOT",
+    row("Stato", alive ? "ATTIVO ✓" : "FERMO?", alive ? "g" : "r") +
+    row("Modalità", (m.mode || "PAPER") + " (soldi finti)", "y") +
+    row("Ultimo giro", ageTxt));
+
+  $("risk").innerHTML = box("GESTIONE RISCHIO",
+    row("Importo per operazione", usd(m.position_size || 0)) +
+    row("Perdita giornaliera", usd(Math.max(0, -s.day_pnl)) + " / " + usd(m.max_daily_loss || 0)) +
+    row("Posizioni aperte", pos.length + " / " + (m.max_positions || 0)) +
+    row("Take profit / Stop loss", "+" + Math.round((m.take_profit || 0) * 100) + "% / " + Math.round((m.stop_loss || 0) * 100) + "%"));
+
+  const d1 = s.day_pnl || 0, d7 = since(hist, 7 * 86400), d30 = since(hist, 30 * 86400);
+  $("perf").innerHTML = box("PERFORMANCE",
+    row("Oggi", sg(d1), cls(d1)) +
+    row("Ultimi 7 giorni", sg(d7), cls(d7)) +
+    row("Ultimi 30 giorni", sg(d30), cls(d30)) +
+    row("Totale", sg(total) + " (" + (total / start * 100).toFixed(2) + "%)", cls(total)) +
+    row("Operazioni chiuse", hist.length + " (vittorie " + winrate + "%)"));
+
+  $("acct").innerHTML = box("CONTO",
+    row("Saldo liquido", usd(s.balance)) +
+    row("Capitale totale", usd(equity), cls(total)) +
+    row("P/L aperto", sg(floating), cls(floating)) +
+    row("Capitale iniziale", usd(start)));
+
+  $("ctl").innerHTML = box("CONTROLLO",
+    `<div class="ctl"><span class="badge ${alive ? "on" : "off"}">${alive ? "BOT ON" : "BOT OFF"}</span>` +
+    `<span class="pill">${pos.length ? pos.length + " POSIZIONI" : "NESSUNA POSIZIONE"}</span></div>`);
+
+  $("pos").innerHTML = box("POSIZIONI APERTE", pos.length
+    ? pos.map(p => { const ch = ((p.last || p.entry) / p.entry - 1) * 100; return row(esc(p.symbol), (ch >= 0 ? "+" : "") + ch.toFixed(1) + "%", cls(ch)); }).join("")
+    : row("Nessuna", ""));
+
+  $("hist").innerHTML = box("ULTIME OPERAZIONI", hist.length
+    ? hist.slice(-10).reverse().map(h => row(esc(h.symbol) + " <small>" + esc(h.reason) + "</small>", sg(h.pnl), cls(h.pnl))).join("")
+    : row("Nessuna operazione chiusa", ""));
+
+  $("foot").textContent = "Si aggiorna da solo ogni minuto. Dati letti dal bot su GitHub.";
+}
+
+async function load() {
+  try {
+    const r = await fetch("paper_state.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    render(await r.json());
+  } catch (e) {
+    $("status").innerHTML = box("ERRORE", "<div>Dati non disponibili. Il bot deve completare almeno un giro.</div>");
+  }
+}
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
