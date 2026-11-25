@@ -1,12 +1,12 @@
 {
-  "balance": 1184.4966056645392,
+  "balance": 1214.2762424733537,
   "positions": {
-    "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f": {
-      "symbol": "BASKET",
-      "entry": 0.0009802,
+    "5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump": {
+      "symbol": "Pompom",
+      "entry": 0.0001299,
       "cost": 50,
-      "qty": 51009.99795960008,
-      "ts": 1795594487.478473
+      "qty": 384911.47036181676,
+      "ts": 1795608998.707659
     }
   },
   "history": [
@@ -34,10 +34,16 @@
       "symbol": "BTC",
       "pnl": -49.5,
       "reason": "stop loss -99%"
+    },
+    {
+      "symbol": "BASKET",
+      "pnl": 29.78,
+      "reason": "take profit +60%",
+      "ts": 1795608998
     }
   ],
   "day": "2026-11-25",
-  "day_pnl": 244.41707956435445,
+  "day_pnl": 274.196716373169,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
     "DGapQqqL7rQEdH4QcY9oW4fNhDZxYeDVfkAdwNVNpump",
@@ -165,6 +171,43 @@
     "DKkTTtue6sb7kw5mJcASgfzpLtnQM9s9qcKriqurpump",
     "4ucrqpAKLTXC9k6MHJqagUFH8wcYYkZjDj24TWXipump",
     "2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump",
-    "CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump"
-  ]
+    "CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump",
+    "FaWEANo8Kz9B415xv3cocE8q5JgghN7CY8FYG4C5pump",
+    "38EDdUxnJvrnDsJyB45E2W3pK26qLEjmWTvsEmMuG9ZR",
+    "8ArRsCwf3FqiMTY4wHqPmViWGJyJWQqQ6YucgTrhpump",
+    "DD23R2DJFKxUCB2CUvogviVhHA7D9RTsjbrFKWBzpump",
+    "2Rw6rLRRZXQLNreForjeVvDjnpYUaW6rmMFXmRP9pump",
+    "GHFpSSw2ZMjmKCyc1wrHUjJiqnJeP18mekY9GL1Xpump",
+    "3ptBnACeZ2dvwpL6jBbbmLvbhckJgrtqCUuyXdtgpump",
+    "5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump",
+    "8wacdzPkcfSGq99YpbWnfikeV8sBfqZBwCvYjPUxtpMW",
+    "9ev61SzHeHrFtDYiykMjyKHUDiB7PK3rwCeCkiDFpump",
+    "E6YDeFJy4HUhas8fSMxNzRS7R3vwff6tinSEDW5U89Yx",
+    "Gnxm7YRnhFD9nGLfMLM89pZe5PWCBCohiEcvXsLppump",
+    "ApbF9Sh7iT8mSpAgbVm4F82XjSoK9P91RXFLxVqFpump",
+    "Gf9wm93TTDpbPC467Eio5Vc42Kr6MAomUD172drWpump",
+    "FMS1KXoLPrbYXEDgpRfDgYwPtwJ7JV5ZXduX2SUFpump",
+    "2rhoUVCygC2LyQWNMXsofKXo1rcbZFJnSTpDbU9Ppump",
+    "roNinuSrZUqNcsqVT4tkRdBR5nswruJxQEN3MqSqWYy",
+    "CW2GNsWs6Fmgj8MKXqWWKNSgiEGTyHRxKKQNkQzrpump",
+    "CgaAtiZVYNMJ66LZL9GvhUzz7o64BMS1dF8tNLZEENL4",
+    "F9uXudpDQVvQDUSqieuD79oxYVQMQzHbgCbYkrorpump",
+    "9Gdhz3WVnTaFcbGPrK2GbBdZpbwAQFfFK42bSgsupump",
+    "5GfgQ79T5P8hSmyKhvRWZvNehgV8gJ3JNTsUvjegbYze",
+    "5BX4LiBheGbrPd7rCxdpbdE14hEgm542Wdpt1zs65fAo",
+    "6woMBVpn4QwQVYeLysGKB2JiBSUCxkENmbemj5eE9Zz3",
+    "8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump",
+    "9woryP8Yxe5jU1YzcYVtW38PppzPjZTKxy4yYctapump",
+    "JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump"
+  ],
+  "meta": {
+    "last_run": 1795608998,
+    "mode": "PAPER",
+    "start_balance": 1000,
+    "position_size": 50,
+    "max_positions": 5,
+    "max_daily_loss": 150,
+    "take_profit": 0.5,
+    "stop_loss": -0.25
+  }
 }
