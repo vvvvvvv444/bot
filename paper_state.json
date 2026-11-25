@@ -1,12 +1,40 @@
 {
-  "balance": 1214.2762424733537,
+  "balance": 1165.0460654140772,
   "positions": {
-    "5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump": {
-      "symbol": "Pompom",
-      "entry": 0.0001299,
+    "5RBADXvDkgz22wF9gzS7BMEFNyvCYqbkomXWjy4pump": {
+      "symbol": "RECORDEGG",
+      "entry": 0.0001069,
       "cost": 50,
-      "qty": 384911.47036181676,
-      "ts": 1795608998.707659
+      "qty": 467726.84752104775,
+      "ts": 1795631948.8130312
+    },
+    "437T35ficBfJK9N8GH4gWbiHb86AsRJRkQjARd7Ppump": {
+      "symbol": "4CHAN",
+      "entry": 0.0002092,
+      "cost": 50,
+      "qty": 239005.73613766732,
+      "ts": 1795631949.1160583
+    },
+    "6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump": {
+      "symbol": "GRAUDIA",
+      "entry": 0.0002311,
+      "cost": 50,
+      "qty": 216356.55560363477,
+      "ts": 1795631949.4082415
+    },
+    "BvnzzK6CBRkUz1EwhxVU1nSNYyNRmVovcz2jRg9Rpump": {
+      "symbol": "MIM",
+      "entry": 0.0004289,
+      "cost": 50,
+      "qty": 116577.29074376311,
+      "ts": 1795631949.6973104
+    },
+    "AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend": {
+      "symbol": "LENDR",
+      "entry": 0.000509,
+      "cost": 50,
+      "qty": 98231.82711198428,
+      "ts": 1795631949.9701016
     }
   },
   "history": [
@@ -40,10 +68,16 @@
       "pnl": 29.78,
       "reason": "take profit +60%",
       "ts": 1795608998
+    },
+    {
+      "symbol": "Pompom",
+      "pnl": 150.77,
+      "reason": "take profit +302%",
+      "ts": 1795631948
     }
   ],
   "day": "2026-11-25",
-  "day_pnl": 274.196716373169,
+  "day_pnl": 424.96653931389267,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
     "DGapQqqL7rQEdH4QcY9oW4fNhDZxYeDVfkAdwNVNpump",
@@ -198,10 +232,36 @@
     "6woMBVpn4QwQVYeLysGKB2JiBSUCxkENmbemj5eE9Zz3",
     "8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump",
     "9woryP8Yxe5jU1YzcYVtW38PppzPjZTKxy4yYctapump",
-    "JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump"
+    "JCd9vynvmBex2t79iGPb5L4jm62b5c4nwQG7sei5pump",
+    "3oGd3qtgYHN1zqVGWhRSC7Gvqd1z6WbJpujQaB21pump",
+    "HDGHdVUHfbHdqiEeWqV9hPXN1d2un13E9EpJFwdLpump",
+    "6TAEsBQuHki4C6ynUmWARpjJ1xmKshrqv7Qh1FHwpump",
+    "9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump",
+    "5RBADXvDkgz22wF9gzS7BMEFNyvCYqbkomXWjy4pump",
+    "437T35ficBfJK9N8GH4gWbiHb86AsRJRkQjARd7Ppump",
+    "HDcF2kBhCpKy5QgwRqSoY32aCCPxKjMsSrhQmNDypump",
+    "67eH4F62kKZ45wfgWMRuu8GNCFP9kN6uFcNvJWBgpump",
+    "93UA32Baowc1gbAoM35CG9Lj5Cw2Pz6T3VfhK63Kpump",
+    "AA4zZX98SLsM4e3e6FbnnW2eiv2AqzYA5VoDkK6ppump",
+    "6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump",
+    "BDkYXdHCZZQTNn6LqFDS2WrKhD2rZmuQioqTW1wupump",
+    "HdPxFDUaKBwMtTWseuYJp4NQCCBqULjn2JhhddGhpump",
+    "safetyBnHUESf5hbcWGXTvmjnpW99aH3REK9aiXXvTi",
+    "HkjQAQjNegsyNct8nbLqcYdGT7SEZLhbqmBiM5eUpump",
+    "BvnzzK6CBRkUz1EwhxVU1nSNYyNRmVovcz2jRg9Rpump",
+    "AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend",
+    "ymZJTsB2cTgUAR4awaHkASjfCk65wBBSDBEYtpRpump",
+    "FrkmQGuoeZecEv5QxQV1zAHJwVJbGChPsC5GeLiqpump",
+    "61yRgMu5pehhsgoH5HLheYGVVgFnvVPxyWuw8oUqp4So",
+    "EC1K3jCNYhv2RN5496KU2h3L2h58qYopYQeg9uNBpump",
+    "B64kgaRQhDMAD8Mf7fMUfKkHqHx6WicibHeTtS5wpump",
+    "3r5wGR4wvk3wsbQ1XXXsUFk9V6RQEzif7YFLAVH1pump",
+    "2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o",
+    "Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump",
+    "BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump"
   ],
   "meta": {
-    "last_run": 1795608998,
+    "last_run": 1795631949,
     "mode": "PAPER",
     "start_balance": 1000,
     "position_size": 50,
