@@ -1,12 +1,26 @@
 {
-  "balance": 958.5115483319076,
+  "balance": 840.0795261001847,
   "positions": {
-    "4m2PS6yW2xDk5V9nJgPjnus1eguwCDSWXbA2YQeVkqxn": {
-      "symbol": "Memeployed",
-      "entry": 9.356e-05,
+    "DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump": {
+      "symbol": "4CHAN",
+      "entry": 0.0002875,
       "cost": 50,
-      "qty": 534416.4172723385,
-      "ts": 1795534451.2915125
+      "qty": 173913.04347826086,
+      "ts": 1795565035.872752
+    },
+    "GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump": {
+      "symbol": "Jimmies",
+      "entry": 0.0001928,
+      "cost": 50,
+      "qty": 259336.09958506224,
+      "ts": 1795565036.3137739
+    },
+    "GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump": {
+      "symbol": "BTC",
+      "entry": 0.0001269,
+      "cost": 50,
+      "qty": 394011.0323089047,
+      "ts": 1795565037.2590327
     }
   },
   "history": [
@@ -14,10 +28,15 @@
       "symbol": "GROKIA",
       "pnl": 8.51,
       "reason": "tempo massimo (+17%)"
+    },
+    {
+      "symbol": "Memeployed",
+      "pnl": -18.43,
+      "reason": "stop loss -37%"
     }
   ],
-  "day": "2026-11-24",
-  "day_pnl": 8.511548331907626,
+  "day": "2026-11-25",
+  "day_pnl": 0.0,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
     "DGapQqqL7rQEdH4QcY9oW4fNhDZxYeDVfkAdwNVNpump",
@@ -94,6 +113,33 @@
     "D2AK5DvBj8AxN5VX1t6bjv7muJVPUx4hFPowVRWYpump",
     "EzKEuCEnA2LMuP4bnDcX7akh4sSGgv3ahwkXBHRSb2S4",
     "5Z7jsmLUBwJM9g8sKg9FfwNdRuR2bnTCcWSraWTKpump",
-    "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump"
+    "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump",
+    "4M1tpKSat8qWnJk6pskUBciw4PBvXt4gNMc36NV8pump",
+    "DE1KN4A5wzxuQXPrBeDSwKRNCKiSPtZNJMto2yMmpump",
+    "DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump",
+    "8nZQ36gei4au7wdmnCDQDEquyPiRzMJNMymXnkiKpump",
+    "AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump",
+    "GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump",
+    "816BuXnCFQqt6KXbBTcFgHWD29Ckpaqt8HMKSN4Vpump",
+    "FvktmXnnZnoVuLYgdo1FSXeydthfhFC7P8orYCEmpump",
+    "9guNcpbsmqcKJikLNBcn8g5AoG3v9k98zK51KcoXpump",
+    "BMqyT3n9kXYhBjWKFdgGmPzbNbqcXs8sNgXWhw7tpump",
+    "GYW5LKz3wK9EAoC62FVocPkbCrSpaXMcyfJSTJmbpump",
+    "7eaPrRzR1i3akX7a7jodh7eSgYSfcC3xnzqWd9hNpump",
+    "2F9HbwGvgrcT37unuMa4QcSP4SPhxynmN6mbri2apump",
+    "FDv89drtnpyApMMLqy6D2PiDSxnGUs7jeHBF26ebpump",
+    "G2YWYVbmgm7JZzFhXKSoE2nxZh8wwwRGWSyrBGqApump",
+    "Ed24VXWVmRGpufeE5hJqE2engYgXrf239BiDrWbZpump",
+    "ES7EGhS29PebFyTTf2PYdnJNPvcF9yzoSeZrMT5xpump",
+    "54Y1hTxnbNha2kkHAC2LqHGXTiEMg3uNr1pYbMQ9pump",
+    "ANDLpP3C7tFXEpqRBmmnbS4usmQthHfs93N5oHGpump",
+    "GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump",
+    "w4Lvmpe5Cpi3n7bwpTCQRTgKT74YFVyRqBVxXnCZBLK",
+    "5Mjo3Y76ek44tUk9NGSiziQEU13t9E21VrsCjX2Bpump",
+    "6SKYN3EYaCGrNQqStXqQo5gtvDAxvjW4xCPLgWPgpump",
+    "BTbP7QckBbsEqnkynYF4BcmAz8CQAnxYsuPHbtXYpump",
+    "8xKZ1yzPFGG1hfsqwPR2tGWsSMx9rJWQGJKiYjKUCLRx",
+    "9YGfkrwK2krv3bbhrTGrL5gxCwEattusrtp5VY6ppriv",
+    "2SheVTv9MeyWhau6sKfLvSyWhsGJ44Wc5MD7SWAppump"
   ]
 }
