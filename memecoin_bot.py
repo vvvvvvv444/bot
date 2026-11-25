@@ -62,7 +62,21 @@ def load_state():
             "day": time.strftime("%Y-%m-%d"), "day_pnl": 0.0, "seen": []}
 
 
+def update_meta(s):
+    s["meta"] = {
+        "last_run": int(time.time()),
+        "mode": "PAPER",
+        "start_balance": PAPER_BALANCE_START,
+        "position_size": POSITION_SIZE,
+        "max_positions": MAX_OPEN_POSITIONS,
+        "max_daily_loss": MAX_DAILY_LOSS,
+        "take_profit": TAKE_PROFIT,
+        "stop_loss": STOP_LOSS,
+    }
+
+
 def save_state(s):
+    update_meta(s)
     STATE_FILE.write_text(json.dumps(s, indent=2))
 
 
@@ -136,7 +150,8 @@ def close_position(s, mint, price, reason):
     pnl = value - pos["cost"]
     s["balance"] += value
     s["day_pnl"] += pnl
-    s["history"].append({"symbol": pos["symbol"], "pnl": round(pnl, 2), "reason": reason})
+    s["history"].append({"symbol": pos["symbol"], "pnl": round(pnl, 2), "reason": reason,
+                         "ts": int(time.time())})
     notify(f"VENDITA (paper) {pos['symbol']} | {reason} | PnL {pnl:+.2f}$ | saldo {s['balance']:.2f}$")
 
 
