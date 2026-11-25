@@ -1,26 +1,12 @@
 {
-  "balance": 840.0795261001847,
+  "balance": 1184.4966056645392,
   "positions": {
-    "DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump": {
-      "symbol": "4CHAN",
-      "entry": 0.0002875,
+    "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f": {
+      "symbol": "BASKET",
+      "entry": 0.0009802,
       "cost": 50,
-      "qty": 173913.04347826086,
-      "ts": 1795565035.872752
-    },
-    "GisWWjhwrSud4aFGSHvTMt85Ky14sY7LeBFCpfoFpump": {
-      "symbol": "Jimmies",
-      "entry": 0.0001928,
-      "cost": 50,
-      "qty": 259336.09958506224,
-      "ts": 1795565036.3137739
-    },
-    "GkSZVKcXcgodewdZd5CbGxFJoUUcazrf1GayrNv3pump": {
-      "symbol": "BTC",
-      "entry": 0.0001269,
-      "cost": 50,
-      "qty": 394011.0323089047,
-      "ts": 1795565037.2590327
+      "qty": 51009.99795960008,
+      "ts": 1795594487.478473
     }
   },
   "history": [
@@ -33,10 +19,25 @@
       "symbol": "Memeployed",
       "pnl": -18.43,
       "reason": "stop loss -37%"
+    },
+    {
+      "symbol": "4CHAN",
+      "pnl": 2.89,
+      "reason": "tempo massimo (+6%)"
+    },
+    {
+      "symbol": "Jimmies",
+      "pnl": 291.03,
+      "reason": "take profit +582%"
+    },
+    {
+      "symbol": "BTC",
+      "pnl": -49.5,
+      "reason": "stop loss -99%"
     }
   ],
   "day": "2026-11-25",
-  "day_pnl": 0.0,
+  "day_pnl": 244.41707956435445,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
     "DGapQqqL7rQEdH4QcY9oW4fNhDZxYeDVfkAdwNVNpump",
@@ -140,6 +141,30 @@
     "BTbP7QckBbsEqnkynYF4BcmAz8CQAnxYsuPHbtXYpump",
     "8xKZ1yzPFGG1hfsqwPR2tGWsSMx9rJWQGJKiYjKUCLRx",
     "9YGfkrwK2krv3bbhrTGrL5gxCwEattusrtp5VY6ppriv",
-    "2SheVTv9MeyWhau6sKfLvSyWhsGJ44Wc5MD7SWAppump"
+    "2SheVTv9MeyWhau6sKfLvSyWhsGJ44Wc5MD7SWAppump",
+    "ABThJ42kS4b1A6NzgtN1DPWERupoftKgDbQJEFyBpump",
+    "6TLY91Ee6qRULfLDdmCoP5ZqCP7Wo5jpFmJiBG7wXtKX",
+    "BBupBrQsZyJF92vCvqfsSdJAx5CWmm1zSEdhBH7qpump",
+    "4XvnS1B28BgsUcwjR2bTm3csxnp8hmTsXZM6jH3Ypump",
+    "292bsmq4iPjLWvAMnD3cRfBJAwj7jtZAzMKRPrsLpump",
+    "8HBAgQbwNucWbRyFHn7Y1DB8Y348WAsPWDJTT7JRpump",
+    "AMYpNGi5aGrKr1ZDsotUdWh7k1mMi569ygtaHJmErGEd",
+    "7CHNjDbmREJXzXeFF4SnGgMmd31YcUZZHno3Y5rCpump",
+    "9gAExEHYk3XKDxXQrCcWHLHTioJpGtdxv7cpcmbBn4fc",
+    "FH1rfK3YU9pMd9Jyko9PjT6eAUGVLpwnksHMB3KXVomp",
+    "6QtshTWFdGsscfo5cH6D8EUyyFgy7BDfdbMevUvbpump",
+    "6MsaWYaAQ3vPKpQMi9ptiX4yhLv1EEt7NYcX5DH6pump",
+    "7wohLebdTHjfCjP6PTVM3HJwMNed4vEL1ZyTawtupump",
+    "F4p47HW6RmkmVAEszyGtVyRrqyj6AfUCHe1assZSpump",
+    "aetiDzWARu2U6Z8oKFRudi8rA4AQRUyeAhy1HPTpump",
+    "4UMErmfmKzDCVmHrwBUbnDnbQnVKVYAcT7X5AdTkpump",
+    "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
+    "FJThvR3CekspNJXkgZ1XUKFVitGnrpCSkp95jhpopump",
+    "Do7UdbGMGdtJF9bbQi9174gx71bc6iJ5pMPkbvtRpump",
+    "F2VoAigAkAWdG6NNc7R44hyp9Ad3SNx3dAFe6faUpump",
+    "DKkTTtue6sb7kw5mJcASgfzpLtnQM9s9qcKriqurpump",
+    "4ucrqpAKLTXC9k6MHJqagUFH8wcYYkZjDj24TWXipump",
+    "2ajAnFA8UKpeYbWSoEwobGQrLvdUUmjipjpongMepump",
+    "CkwFsrupdFHzo5kYk8b5W47CVx1v5ymzeu6BBoDjpump"
   ]
 }
