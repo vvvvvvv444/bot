@@ -17,9 +17,13 @@ h1{font-size:17px;text-align:center;letter-spacing:3px;margin:4px 0 14px}
 .g{color:var(--g)}.r{color:var(--r)}.y{color:var(--y)}
 .ctl{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
 .badge{padding:6px 16px;border-radius:8px;font-weight:700}
-.on{background:var(--g);color:#000}.off{background:var(--r);color:#fff}.wait{background:var(--y);color:#000}
+.on{background:var(--g);color:#000}.off{background:var(--r);color:#fff}
 .pill{padding:6px 12px;border-radius:8px;background:#21262d;color:var(--mut);font-size:13px}
 .foot{text-align:center;color:var(--mut);font-size:12px;margin-top:6px}
+.ch{margin-bottom:14px}
+.ch svg{display:block;background:#0d1117;border-radius:8px;margin-top:4px}
+.mut{color:var(--mut);font-size:12px}
+small{color:var(--mut)}
 </style>
 </head>
 <body>
@@ -31,6 +35,7 @@ h1{font-size:17px;text-align:center;letter-spacing:3px;margin:4px 0 14px}
   <div class="card" id="acct"></div>
   <div class="card" id="ctl"></div>
   <div class="card" id="pos"></div>
+  <div class="card" id="charts" style="display:none"></div>
   <div class="card" id="hist"></div>
   <div class="foot" id="foot"></div>
 </div>
@@ -43,6 +48,37 @@ const cls = n => n > 0.005 ? "g" : n < -0.005 ? "r" : "";
 const row = (a, b, c = "") => `<div class="row"><span>${a}</span><span class="${c}">${b}</span></div>`;
 const box = (t, body) => `<div class="t">${t}</div>${body}`;
 const since = (h, sec) => h.filter(x => x.ts && x.ts >= Date.now() / 1000 - sec).reduce((a, x) => a + x.pnl, 0);
+const num = v => Number(v).toPrecision(3);
+
+function chartSvg(c) {
+  const k = c.candles;
+  if (!k || !k.length) return '<div class="mut">Grafico non ancora disponibile</div>';
+  const W = 420, H = 190, P = 8;
+  let lo = Math.min(...k.map(x => x[3])), hi = Math.max(...k.map(x => x[2]));
+  [c.entry, c.exit].forEach(v => { if (v) { lo = Math.min(lo, v); hi = Math.max(hi, v); } });
+  const y = v => P + (hi - v) / ((hi - lo) || 1) * (H - 2 * P);
+  const bw = (W - 2 * P) / k.length;
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%">`;
+  k.forEach((x, i) => {
+    const o = x[1], h = x[2], l = x[3], cl = x[4];
+    const col = cl >= o ? "#3fb950" : "#f85149";
+    const cx = P + i * bw + bw / 2;
+    s += `<line x1="${cx}" x2="${cx}" y1="${y(h)}" y2="${y(l)}" stroke="${col}" stroke-width="1"/>`;
+    s += `<rect x="${cx - bw * 0.35}" y="${y(Math.max(o, cl))}" width="${bw * 0.7}" height="${Math.max(1, Math.abs(y(o) - y(cl)))}" fill="${col}"/>`;
+  });
+  if (c.entry) s += `<line x1="0" x2="${W}" y1="${y(c.entry)}" y2="${y(c.entry)}" stroke="#d29922" stroke-dasharray="4 3"/><text x="${W - 4}" y="${y(c.entry) - 3}" fill="#d29922" font-size="10" text-anchor="end">ingresso</text>`;
+  if (c.exit) s += `<line x1="0" x2="${W}" y1="${y(c.exit)}" y2="${y(c.exit)}" stroke="#58a6ff" stroke-dasharray="4 3"/><text x="${W - 4}" y="${y(c.exit) - 3}" fill="#58a6ff" font-size="10" text-anchor="end">uscita</text>`;
+  return s + `</svg><div class="mut">max ${num(hi)} · min ${num(lo)} · candele da 5 min</div>`;
+}
+
+function renderCharts(data) {
+  const list = Object.values(data || {}).sort((a, b) => (b.open ? 1e12 : b.exit_ts || 0) - (a.open ? 1e12 : a.exit_ts || 0));
+  if (!list.length) { $("charts").style.display = "none"; return; }
+  $("charts").style.display = "block";
+  $("charts").innerHTML = box("GRAFICI A CANDELE", list.map(c =>
+    `<div class="ch">` + row(esc(c.symbol) + " <small>" + (c.open ? "aperta" : "chiusa") + "</small>",
+      c.open ? "in corso" : sg(c.pnl || 0), c.open ? "y" : cls(c.pnl || 0)) + chartSvg(c) + `</div>`).join(""));
+}
 
 function render(s) {
   const m = s.meta || {};
@@ -61,18 +97,25 @@ function render(s) {
     : ageMin < 60 ? Math.round(ageMin) + " min fa"
     : ageMin < 1440 ? (ageMin / 60).toFixed(1) + " ore fa"
     : Math.round(ageMin / 1440) + " giorni fa";
-  const alive = ageMin !== null && ageMin < 720;
+  const alive = ageMin !== null && ageMin < 30;
 
-  $("status").innerHTML = box("STATO BOT",
-    row("Stato", alive ? "ATTIVO ✓" : "FERMO?", alive ? "g" : "r") +
+  let st = row("Stato", alive ? "ATTIVO ✓" : "FERMO?", alive ? "g" : "r") +
     row("Modalità", (m.mode || "PAPER") + " (soldi finti)", "y") +
-    row("Ultimo giro", ageTxt));
+    row("Strategia", esc(m.strategy || "v1")) +
+    row("Ultimo salvataggio", ageTxt);
+  if (s.archive) {
+    const r = s.archive.final_balance - start;
+    st += row("Test precedente (" + esc(s.archive.strategy) + ")", sg(r) + " in " + s.archive.trades + " op.", cls(r));
+  }
+  $("status").innerHTML = box("STATO BOT", st);
 
+  const tp = m.partial_tp !== undefined ? m.partial_tp : m.take_profit;
   $("risk").innerHTML = box("GESTIONE RISCHIO",
     row("Importo per operazione", usd(m.position_size || 0)) +
-    row("Perdita giornaliera", usd(Math.max(0, -s.day_pnl)) + " / " + usd(m.max_daily_loss || 0)) +
+    row("Perdita giornaliera", usd(Math.max(0, -(s.day_pnl || 0))) + " / " + usd(m.max_daily_loss || 0)) +
     row("Posizioni aperte", pos.length + " / " + (m.max_positions || 0)) +
-    row("Take profit / Stop loss", "+" + Math.round((m.take_profit || 0) * 100) + "% / " + Math.round((m.stop_loss || 0) * 100) + "%"));
+    row("Vendita metà / Stop loss", "+" + Math.round((tp || 0) * 100) + "% / " + Math.round((m.stop_loss || 0) * 100) + "%") +
+    (m.trailing ? row("Trailing stop dal massimo", "-" + Math.round(m.trailing * 100) + "%") : ""));
 
   const d1 = s.day_pnl || 0, d7 = since(hist, 7 * 86400), d30 = since(hist, 30 * 86400);
   $("perf").innerHTML = box("PERFORMANCE",
@@ -90,17 +133,18 @@ function render(s) {
 
   $("ctl").innerHTML = box("CONTROLLO",
     `<div class="ctl"><span class="badge ${alive ? "on" : "off"}">${alive ? "BOT ON" : "BOT OFF"}</span>` +
-    `<span class="pill">${pos.length ? pos.length + " POSIZIONI" : "NESSUNA POSIZIONE"}</span></div>`);
+    `<span class="pill">${pos.length ? pos.length + (pos.length === 1 ? " POSIZIONE" : " POSIZIONI") : "NESSUNA POSIZIONE"}</span></div>`);
 
   $("pos").innerHTML = box("POSIZIONI APERTE", pos.length
-    ? pos.map(p => { const ch = ((p.last || p.entry) / p.entry - 1) * 100; return row(esc(p.symbol), (ch >= 0 ? "+" : "") + ch.toFixed(1) + "%", cls(ch)); }).join("")
+    ? pos.map(p => { const base = p.entry_mkt || p.entry; const ch = ((p.last || base) / base - 1) * 100;
+        return row(esc(p.symbol) + (p.partial ? " <small>metà venduta</small>" : ""), (ch >= 0 ? "+" : "") + ch.toFixed(1) + "%", cls(ch)); }).join("")
     : row("Nessuna", ""));
 
   $("hist").innerHTML = box("ULTIME OPERAZIONI", hist.length
     ? hist.slice(-10).reverse().map(h => row(esc(h.symbol) + " <small>" + esc(h.reason) + "</small>", sg(h.pnl), cls(h.pnl))).join("")
     : row("Nessuna operazione chiusa", ""));
 
-  $("foot").textContent = "Si aggiorna da solo ogni minuto. Dati letti dal bot su GitHub.";
+  $("foot").textContent = "La pagina si aggiorna ogni minuto. Il bot salva i dati su GitHub circa ogni 10 minuti.";
 }
 
 async function load() {
@@ -111,6 +155,10 @@ async function load() {
   } catch (e) {
     $("status").innerHTML = box("ERRORE", "<div>Dati non disponibili. Il bot deve completare almeno un giro.</div>");
   }
+  try {
+    const r = await fetch("candles.json?t=" + Date.now(), { cache: "no-store" });
+    if (r.ok) renderCharts(await r.json());
+  } catch (e) { /* grafici facoltativi */ }
 }
 load();
 setInterval(load, 60000);
