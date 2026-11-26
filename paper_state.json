@@ -1,40 +1,33 @@
 {
-  "balance": 1165.0460654140772,
+  "balance": 1025.5551916404638,
   "positions": {
-    "5RBADXvDkgz22wF9gzS7BMEFNyvCYqbkomXWjy4pump": {
-      "symbol": "RECORDEGG",
-      "entry": 0.0001069,
+    "BAijHvUiHCoCxApyYAUnz5g6LnizZXVYoHwdMarqTWtw": {
+      "symbol": "TAXMAN",
+      "entry": 4.951e-05,
       "cost": 50,
-      "qty": 467726.84752104775,
-      "ts": 1795631948.8130312
+      "qty": 1009896.9905069683,
+      "ts": 1795658199.9700727
     },
-    "437T35ficBfJK9N8GH4gWbiHb86AsRJRkQjARd7Ppump": {
-      "symbol": "4CHAN",
-      "entry": 0.0002092,
+    "DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump": {
+      "symbol": "MONEY",
+      "entry": 0.0007021,
       "cost": 50,
-      "qty": 239005.73613766732,
-      "ts": 1795631949.1160583
+      "qty": 71214.92664862555,
+      "ts": 1795658200.4046164
     },
-    "6F2FyeyphDn62TFkXXpisUCohotPArgiM1kVXsPNpump": {
-      "symbol": "GRAUDIA",
-      "entry": 0.0002311,
+    "5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump": {
+      "symbol": "Pumpcat",
+      "entry": 0.0004095,
       "cost": 50,
-      "qty": 216356.55560363477,
-      "ts": 1795631949.4082415
+      "qty": 122100.12210012211,
+      "ts": 1795658200.814759
     },
-    "BvnzzK6CBRkUz1EwhxVU1nSNYyNRmVovcz2jRg9Rpump": {
-      "symbol": "MIM",
-      "entry": 0.0004289,
+    "Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump": {
+      "symbol": "UHI",
+      "entry": 0.0009937,
       "cost": 50,
-      "qty": 116577.29074376311,
-      "ts": 1795631949.6973104
-    },
-    "AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend": {
-      "symbol": "LENDR",
-      "entry": 0.000509,
-      "cost": 50,
-      "qty": 98231.82711198428,
-      "ts": 1795631949.9701016
+      "qty": 50316.99708161417,
+      "ts": 1795658201.2436128
     }
   },
   "history": [
@@ -74,10 +67,40 @@
       "pnl": 150.77,
       "reason": "take profit +302%",
       "ts": 1795631948
+    },
+    {
+      "symbol": "RECORDEGG",
+      "pnl": -49.22,
+      "reason": "stop loss -98%",
+      "ts": 1795658199
+    },
+    {
+      "symbol": "4CHAN",
+      "pnl": -49.68,
+      "reason": "stop loss -99%",
+      "ts": 1795658199
+    },
+    {
+      "symbol": "GRAUDIA",
+      "pnl": -49.71,
+      "reason": "stop loss -99%",
+      "ts": 1795658199
+    },
+    {
+      "symbol": "MIM",
+      "pnl": -49.84,
+      "reason": "stop loss -100%",
+      "ts": 1795658199
+    },
+    {
+      "symbol": "LENDR",
+      "pnl": 8.96,
+      "reason": "tempo massimo (+18%)",
+      "ts": 1795658199
     }
   ],
-  "day": "2026-11-25",
-  "day_pnl": 424.96653931389267,
+  "day": "2026-11-26",
+  "day_pnl": 0.0,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
     "DGapQqqL7rQEdH4QcY9oW4fNhDZxYeDVfkAdwNVNpump",
@@ -258,10 +281,37 @@
     "3r5wGR4wvk3wsbQ1XXXsUFk9V6RQEzif7YFLAVH1pump",
     "2hsmC7864Ve1giwLygu7bJjZU1R4JZKX9kCxWmD9yP6o",
     "Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump",
-    "BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump"
+    "BxZ4f47jzHCQLeuby76jwwwzL8ASc2p45gmreF2tpump",
+    "4rsKXnDbZ4iusgSC1DZKTRTHbCZsuYbBkowNicM1LGND",
+    "4EDZqQePCopYQDGBvyB4dk8E7KxpytZUyun2JqJHgF2n",
+    "jjw6p8XwSXDqf9Ebze4vrkiaY89mhGsdB92KY4Lpump",
+    "ERhjmSpLh6Rr4ozYjkGohr7rLizv7Mw6MgWpEFH7pump",
+    "Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump",
+    "9NGZcSJLab63jdFFfeKykM48CxWspjc1xj3PSeQVVrYg",
+    "KBoY4xbPzHCsDVPu8Aa4XZBy5tXi4RmfzBteQkypump",
+    "FubTLBcy3LZJro14qVvXW7v8mEyug4MedaPdLrNTpump",
+    "BAijHvUiHCoCxApyYAUnz5g6LnizZXVYoHwdMarqTWtw",
+    "EDA6AEGdtQg3sT5DQuDbhf4KxoFxG8CuUsrPqAuPpump",
+    "CnozX9VZrfTSCzssxicM4ee86GTuf497G5t94rUvpump",
+    "6P4teY16DcYw6A77BggtkRQ8KAKbt3kphk4NkwdEpump",
+    "3r7Ki2dJUzFWJEMg69fP6KpoTxziVLGkgZDNyWyApump",
+    "B9vaknGRMFPtfPYtE4Wj9kauLmfvBCV3SJ6EGRQ4pump",
+    "DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump",
+    "DK4QQxea6rwU8oK3cFa4onw5z1GjZex8XWSusSyiXipg",
+    "4oZqAT8xgFviPyU6jygJc4gzN2SPy1SBJC1W7UdDpump",
+    "DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump",
+    "GMwcx6HoqezPLgrCB1f7QLjHuVmBUAd8R1hqkh9gpump",
+    "AqNAfcg8AkidVLLE7Tszh2PjUGzgaKvJskDXQXRHpump",
+    "73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+    "5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump",
+    "G8q8PCEvzTmnrWgLovHSGMvGsFoqZiaQ2yyzmp7NxJBF",
+    "AuGHNhb2ZFz62CHpkzmTutqrh75dUVGN91yFEU3fpump",
+    "Bnw5JRPek5JvJhzUiB9yrs2cmzt4bLeFqSRzDzSppump",
+    "FVWXgqKp1sD5YtNL2LtYEyN52tPX1RrYSsNugvvfLoat",
+    "DxyxM6zCgefa74SDQuh2k78pcb4mPfKPtrHNEmbtpump"
   ],
   "meta": {
-    "last_run": 1795631949,
+    "last_run": 1795658201,
     "mode": "PAPER",
     "start_balance": 1000,
     "position_size": 50,
