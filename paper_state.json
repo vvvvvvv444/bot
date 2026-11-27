@@ -286,7 +286,8 @@
     "BuorVu99GQ1LHT194YNYRbdXivTCA8o58nz7iji2pump",
     "CS8vS3n7Ptc4NBGwt62LxxAeW7gpPigHVYhmKcS7pump",
     "G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump",
-    "5ogd8JqTBX3PP4Nm6czEyiLzPYSKaj92H51LiXfHpump"
+    "5ogd8JqTBX3PP4Nm6czEyiLzPYSKaj92H51LiXfHpump",
+    "8tiWobkyfwAaagnrQ2DdVi8L3cf83FuZWbsrWUTNpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -387,7 +388,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795740983,
+    "last_run": 1795741585,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
