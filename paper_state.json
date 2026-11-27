@@ -383,7 +383,12 @@
     "GuqwZm4HJzVfJpb4QebarNg689K7vvcuMwHTeYFq8khY",
     "CoKsSiUErE1bdU27mJN8Y7LBw4cNuCWohweZMxPkpump",
     "H3AXQ5iCN4AEr96AD6k4DJ7mdKwUJFSJMPM6b8Fkpump",
-    "F5DxJtHaFNnxdjBXounqM3xXMSqSSLgJ5u8yt5m5pump"
+    "F5DxJtHaFNnxdjBXounqM3xXMSqSSLgJ5u8yt5m5pump",
+    "28EqQfoXVquQjuJvbXuZuTonkhCL6yTmC5XQf96Spump",
+    "E2fzuiP8cp4TgzgQiN3g6CCMD6Kh6wUxfgWKbiN8uwa9",
+    "B9wbjDJ4FbHMsZmoXAkJSTAwuePaJUKbySvnK5zApump",
+    "73c1ih4kbQsPWsEw35EeDwk4QgJ9mZMkM7LqJgYZpump",
+    "21QhGStnGCYJoanv5Z8799vLSrJi5b26g9kWUaH2pump"
   ],
   "archive": {
     "strategy": "v1",
@@ -484,7 +489,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795795053,
+    "last_run": 1795795655,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
