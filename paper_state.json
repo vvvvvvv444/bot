@@ -326,7 +326,27 @@
     "H7RL6etzmbPw4hS2dgxzbjjKzGEzJicpWiNYmiqSpump",
     "DVnbvxCH2BEdLjPCCZ5R6wQ6223WvDunCnVmfhhTRdno",
     "2DyLsLXdJyjPUQ9EZg4VbceuaPDDVZ8n2z365bgtpump",
-    "4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump"
+    "4tPsVjDAqgDjb5TzGazEDMvM2GK2xDvCG2LxpX8opump",
+    "E3iqCHjYqaD3bNv5ufa6pthDLYTMhEGZ8NDuw7cTpump",
+    "ARuqsdqbzzAeZwHufEerMWyWEuiTPXE2ogMs32m8pump",
+    "4tqzkSWA9tiWYhzYpSt81We3cVNkrEbkD1tzjFDZpump",
+    "jMhjZicmQSAJNoub4VEyJKqJxXzuyFCSKGgribxpump",
+    "CBkQxn7beaPnR4UcL289WAH8yd4kmEJrHK9rLmr1pump",
+    "Au2nGUXZ8q7CJVSr9Gvdroxg7HeBiBGbYxbLDAdapump",
+    "At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump",
+    "Ejbu9xDBN3XuDiLj9A61sctiVzYocF3TpKojiBPvpump",
+    "HhVNCcJ1vVhe7jVw2HrqutmyHzDw9wwnztjQgcFmpump",
+    "HFj3vfGpB8nqSrCUXwGvd2VbehVUermFcFDHecwhpump",
+    "4jKrHtBMLt4TMEpiCa4uBEcMFgpA5R4t2EmTcWjfpump",
+    "Ahc2DBPw4kyooS2D4XHdFmybbUmP1PR2vJs1gKVipump",
+    "59J68geN6rWTM9csfPC4h23wV6g9hZ2kzubuvHBApump",
+    "38RE7ZQZ8Y4DmnHE6iuceWQkQE6T2qZkJyB9YfcSpump",
+    "Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump",
+    "4xLiuSTr6CnXzPDT1Bzs3KHqqhgqSE2n1zmPeBqopump",
+    "9PBVXxx7Hn72EJttB8X2besqJtbUvE4iN3Cc3ubUpump",
+    "aSRNrUQqrWqvV1Yf25exdxVa3bWk63K7tvzTnNytoLL",
+    "H8cim5HL7iSqTKhb47TLzwC54Ag7si1V3nob8rwWpump",
+    "CVcVTN9yFswizy3DYdPKJJtYup3hpgC9U7FX1yzUpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -427,7 +447,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795755966,
+    "last_run": 1795776383,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
