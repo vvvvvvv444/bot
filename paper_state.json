@@ -298,7 +298,10 @@
     "8YjTr1ehqPHXRTuZuULJAuciFqNMRJmNmzyrY2cUpump",
     "4obGGXRMVyqpWZr12UzyaBdNkgdYwz2GiY8enmd2pump",
     "7Ttmp4xBtErMzxpR6AhuzJjDf7u3YGJtWm5ibPsqpump",
-    "6StXSU7RvsbuwNG2gPw7nmu2UTVM3ZD2aewHA7fMpump"
+    "6StXSU7RvsbuwNG2gPw7nmu2UTVM3ZD2aewHA7fMpump",
+    "FDJfGGPSw9jJ8JRnQW62GLGekjUHKDxdeA9kh27Tpump",
+    "D3PSUeS11AQNgpfX8GRFdXfVzZwmNanPX9MdGKyHpump",
+    "RecRFwNXRbTuDwDnvokNv5h4hLQubaDZMJwKfshpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -399,7 +402,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795745797,
+    "last_run": 1795746398,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
