@@ -3,7 +3,7 @@
   "balance": 1000,
   "positions": {},
   "history": [],
-  "day": "2026-11-26",
+  "day": "2026-11-27",
   "day_pnl": 0.0,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
@@ -277,7 +277,8 @@
     "FxWDDcxosMaRnFRzzDQisFjN4a5Gip5ECs7MtsQYFLoW",
     "9J2cy3AfDquDDKqjteYaFSrYEvUAGnb1Qxw8pZQApump",
     "CKiuTwHFMXKBaQ4V1WgsYctsdbLeit3wytXRkphzpump",
-    "B2JjjQfrDAiDM99haXM5jpFibxbQaPvdqX7aB9Tupump"
+    "B2JjjQfrDAiDM99haXM5jpFibxbQaPvdqX7aB9Tupump",
+    "2VeUSgG7uyFdEvvPVn8vhBWDagegU3mZ6pL51r9Bvv2r"
   ],
   "archive": {
     "strategy": "v1",
@@ -378,7 +379,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795737373,
+    "last_run": 1795737974,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
