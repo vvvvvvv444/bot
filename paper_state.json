@@ -13,8 +13,6 @@
   "day": "2026-11-28",
   "day_pnl": 12.916447875585146,
   "seen": [
-    "EugsQhveCEQGoapBEUrMQxJxWNdshJrSmaLtN4ArRMM1",
-    "4R5rnh1KFL33ZnDoADAdLMXgQbKQm2X9R7rZT1Kcpump",
     "2TxPh38YzN1Hn9F2vigaKDyPrcMJmt5aFMyvxTYFUF2u",
     "GtDfJKk62DKwdBmmHh7s3fMmzvwirdgjtLg2PVHq43bt",
     "ArTHx2XxPadBjkJw9WacfwPTEoaeG5jMakX26tzEpump",
@@ -512,7 +510,9 @@
     "3JfzkFiB95EY8ZvE3TtsKQcQ4Sf2M1SMzZKu1JNwkoqw",
     "8yUDvFWAHXBXSdgcRJZ7cWtFb1DZ1dwaQeYhb7kEpump",
     "Cek7GapLWHSraLUd3wXdoGmX1mkYpVf3vPeREcTipump",
-    "3V8dPY9yH4TSHm11fx6Po7XJ8xPzSjcf8W9Q3QhXpump"
+    "3V8dPY9yH4TSHm11fx6Po7XJ8xPzSjcf8W9Q3QhXpump",
+    "G4meLXkHyXQatVU4yk9jEiamRVN3CBB3akHzRketpump",
+    "4qnvryLCPUQ1kLZMsK44Ra2H19tRGzijbbhfDmSLpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -613,7 +613,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795871476,
+    "last_run": 1795872078,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
