@@ -9,8 +9,8 @@
       "cost": 12.5,
       "qty": 19950.554545614148,
       "ts": 1795830760.0475771,
-      "last": 0.0009205,
-      "last_seen": 1795848302.241625,
+      "last": 0.0009318,
+      "last_seen": 1795848907.8168845,
       "peak": 0.0009893,
       "pair": "Br6X4CcmyiJ3Sfi5p66Arx5P1euPQrG9wGt7RknjLq83",
       "partial": true,
@@ -621,7 +621,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795848302,
+    "last_run": 1795848908,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
