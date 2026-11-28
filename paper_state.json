@@ -1,9 +1,24 @@
 {
   "strategy": "v2",
-  "balance": 1000,
-  "positions": {},
+  "balance": 975,
+  "positions": {
+    "9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump": {
+      "symbol": "Memeball",
+      "entry": 0.000626549,
+      "entry_mkt": 0.0006083,
+      "cost": 25,
+      "qty": 39901.109091228296,
+      "ts": 1795830760.0475771,
+      "last": 0.0006083,
+      "last_seen": 1795830760.0475774,
+      "peak": 0.0006083,
+      "pair": "Br6X4CcmyiJ3Sfi5p66Arx5P1euPQrG9wGt7RknjLq83",
+      "partial": false,
+      "realized": 0.0
+    }
+  },
   "history": [],
-  "day": "2026-11-27",
+  "day": "2026-11-28",
   "day_pnl": 0.0,
   "seen": [
     "EuhRYb4XCGkwrmxQKy5RRBNXig659bEdW3GKapEppump",
@@ -473,7 +488,24 @@
     "FfpFYBVWHHHmAvh67A1xrQxZNGvURSvMzUjyFNPfLoat",
     "6XGHv8KvqJg5Kekr8zydwmpHrJhWSARJZKJNTHJ97UyQ",
     "81ijK2haeYqqjnoiPTtBMS9CBt2ThCcvdB6N3rQEpump",
-    "GarXkFtt2CSW1E9i7dxKzcasnvP38qwFxyafPzqopump"
+    "GarXkFtt2CSW1E9i7dxKzcasnvP38qwFxyafPzqopump",
+    "4un1KFw4bJm9FwVcPN3Hc5AGXYwVgN2tEnK2M4nj8BbV",
+    "28GQ3Mg66RGTA47jVvukvdfhKXgrYJ7rRF4zoNhipump",
+    "7F5Xamqc5eGTfJZE9EyMiPA5QSNziWua6zL1M1kTpump",
+    "31yPP3Wwkm9QfNzQmGWjA4ggCsEWmTazDFv2Bbjfpump",
+    "28GEp4GcNVHPtwZbkhNWKaw5MqW9QsDC5n5m7H79pump",
+    "AYGuBsxYTKUSPKf9vwGqCuGDGVpjj4n2EAgDresBpump",
+    "9PY2x8zdYDhbVtBEdT35duYY6EzwFXhyov9R5Uazpump",
+    "8CbCH51PziZKvD1k9M9qy24CqfkmNSiprRjT14xNQTZT",
+    "CLcFahnBEHLhpMKhTore2mcMrzqssMRQdT5LGAkGU2sE",
+    "9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump",
+    "DzYW58eZjEjARJ8R9xLT7E7mnnFZC7pztrNpiCbBborn",
+    "viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6",
+    "14SsX1H9qge5qE3MeQK87hygFkmHBQnHxJEHgXkspump",
+    "CCoeBe5jaPKFNym8cNNdDzPZDYLPDB1p99Hyp2LfM4Sm",
+    "AvvXpCVph4PtJ5urfhetPkdZYh8o4uW7CawUA2MK8hFT",
+    "856eo2Q9FRC5Wb9GxAFpUR4SdaHiod3bP6Z6bGbopump",
+    "52gfZmrZVjq6VhS6nNqN8bAsAL2AiY5aYwopc4Yfpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -574,7 +606,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795823234,
+    "last_run": 1795830760,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
