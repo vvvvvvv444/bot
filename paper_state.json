@@ -13,10 +13,6 @@
   "day": "2026-11-28",
   "day_pnl": 12.916447875585146,
   "seen": [
-    "3QUrDTez1H6UyhLS5tMHBZgS79j9fJvwm7EPG2Fbpump",
-    "fiixPXZmvzFefzHmCXQG9jri2JyH8ichA3tgWENpump",
-    "6wLQwVC4q6s2LKNbbw29NQXXDPfjWhb6F3xo6QTgpump",
-    "1PPQkxYy2wUvKkUXMnDkiDrqx5Hfp2nbDju11cvHeFW",
     "DE6jZSwe422PWGWWU5hNCUrUmPDHHhF5aVXpjFbFpump",
     "DU9Q7K3TqLTW1xS36S45TPj3FVwym2F5wAbF5tHkpump",
     "MX8yBPVGKEFhhJ2jZRKEWxXgWHq7ScQ9cwqQjVHmake",
@@ -512,7 +508,11 @@
     "GDUL9Nor761zu3m6azcUiaLruwReAYG7jTppgGiWpump",
     "ErMz6VH75F8jHGddJTiZHwimKWQLHr3ioFJfhkGApump",
     "883W8K13jVaVyxX2pk6G1G9fsjZJVUCGntKENpkhxBuw",
-    "q9VM1LRTCB7P7TNLRKyZJUPtdoH3e9FRuVFyY9Xpump"
+    "q9VM1LRTCB7P7TNLRKyZJUPtdoH3e9FRuVFyY9Xpump",
+    "HnRPNwcYZFhsuRg5ChqdBEUR7DLx1XrGXdYkuSBqpump",
+    "pCH6bfSwqFimDVtnYe59otToqHP1TTyhWwzfC4pYMRa",
+    "77yEME56mnhjRaGyXWZgdQpLLYZNJePFKuZmeqDYpump",
+    "2rNXHv3NmzbvD3TSixKtSgY47yDNUGXA5wnvdY6jpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -613,7 +613,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795876896,
+    "last_run": 1795877498,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
