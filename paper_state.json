@@ -1,38 +1,18 @@
 {
   "strategy": "v2",
-  "balance": 992.7516243741511,
-  "positions": {
-    "9G9Ssh55SZEoniFjMrMefug9fBy67bUvHzWAxb5Ypump": {
+  "balance": 1012.9164478755852,
+  "positions": {},
+  "history": [
+    {
       "symbol": "Memeball",
-      "entry": 0.000626549,
-      "entry_mkt": 0.0006083,
-      "cost": 12.5,
-      "qty": 19950.554545614148,
-      "ts": 1795830760.0475771,
-      "last": 0.0009284,
-      "last_seen": 1795851147.527483,
-      "peak": 0.0009893,
-      "pair": "Br6X4CcmyiJ3Sfi5p66Arx5P1euPQrG9wGt7RknjLq83",
-      "partial": true,
-      "realized": 5.251624374151103
+      "pnl": 12.92,
+      "reason": "tempo massimo (+71%)",
+      "ts": 1795860637
     }
-  },
-  "history": [],
+  ],
   "day": "2026-11-28",
-  "day_pnl": 5.251624374151103,
+  "day_pnl": 12.916447875585146,
   "seen": [
-    "Gb5PN7CtQ4AhmLAdnpPNTVHDZJrRmGqRsGbEEsqMpump",
-    "CiZbjDmkr4Q9EwoTAjPfj7hYRqTrReqFG9shqMeFpump",
-    "C56bqSxEDTyAgZmL9tcA6j3nYvFMP1wvyTsVghBBpump",
-    "9SzSjbqTRb8f6vVeL5tUBwpppJFwLf1BfYkUwFeEpump",
-    "9oxUBRyk9EXfQHMchya45p3xsF2fbNzzDUNKzEfKpump",
-    "ELkJSMRUBboeBDKDaBzTfFzqZZ1hzqAASFzFK4wfDtz1",
-    "EaiNiPA791st8dtYYuRKqU4M2wetyRdRzk5K2VT1pump",
-    "7sCw9NvfSxgMaj4Q7gGWBZWkXPtmaoji82Zr61UTpump",
-    "8EakoV8ox4RMK9R8r59X74iiK5bHLmYmgVyBeK29pump",
-    "3mTQnHtok9wnT7yDA1G9BfMh5xNbyQerYkpfTDyKpump",
-    "6kdrep4bs5HjY7uGQ4cSnNAdAxspTBivQVm2ZueZpump",
-    "8ijfaD31UNbhtucEXMjZu5vsdG7DSSEQYDZJQDGNpump",
     "GpzEWYo4bRV2cPPaT6kMuvesbs5mvjk2Z8eNQv7Hpump",
     "RZv3jrN6u1e2vCwTiJgRJwfnmyJaZqq48qkPz1xpump",
     "3mEP7FrY1uxTS5ysSAdEEkMxc2eGMCjE4wMWdQQLvdaK",
@@ -520,7 +500,19 @@
     "ArrsHWAybe2qPLwMFpmcxf5GaT19ZQJ7bnPSyKhJFsEt",
     "HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump",
     "B29od4bd54VAVAqJFToRKkKJadUGK5v8pkAVb5uvpump",
-    "9sogyryhrdDKjZvizHPsevJ4GEGzN76Y2bGpF5WEpump"
+    "9sogyryhrdDKjZvizHPsevJ4GEGzN76Y2bGpF5WEpump",
+    "74BLGR7amu13t2QBjq7PQq1dkx97rouLheFQGS2Fpump",
+    "2n5tTb5UXKABFXYRxDEjtDpWFh5ZFk7oRcNLDML5pump",
+    "FVi5fXEPruYmkGu5jsY5wAsPGCr3sy1p6jZkZ3z9pump",
+    "A6BBHdxCNFmpLqCzEzdoZ2wVPLVcr6jcxFn7oEeMpump",
+    "4cZsB6UgdUBTi13JMusBap9r2qGW1MPrdaSVAYkSpump",
+    "GggaHk9atb7LYq16S2X6FwjQdZT8D8YQ6vydeosgFGtg",
+    "EqaMtkdjUAHubn2Xn3vMrCCtjz8XQZ5xVDHPn4phpump",
+    "A7xhY12G388pXGsBuweS6NkyZyv53ogH1dNfEkCMpump",
+    "Ab4YRbH4bPwsi4EykXZL2nzo4SiZXtgpPDdDVcPLpump",
+    "8i2ssMZBaS3HShu5hoDEV4tVLf5RGXeNJnK3LNTHTH9e",
+    "DXLE6M12GsJW23aTU2VpZeJcgQ8rwTwQbzmDKvMSpump",
+    "8Y24KBnY9gaNWDaxohxtEU1gxESvfwdYeGFuHJKpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -621,7 +613,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795851147,
+    "last_run": 1795860637,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
