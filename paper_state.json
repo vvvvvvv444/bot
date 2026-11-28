@@ -9,9 +9,9 @@
       "cost": 25,
       "qty": 39901.109091228296,
       "ts": 1795830760.0475771,
-      "last": 0.000683,
-      "last_seen": 1795833782.293835,
-      "peak": 0.0007424,
+      "last": 0.0007679,
+      "last_seen": 1795834386.6378036,
+      "peak": 0.0007885,
       "pair": "Br6X4CcmyiJ3Sfi5p66Arx5P1euPQrG9wGt7RknjLq83",
       "partial": false,
       "realized": 0.0
@@ -511,7 +511,9 @@
     "5juN9boU6DKLEkye891ERyi4ubESHPRy8MNcbwqfpump",
     "6NZANPwagg8qLrfi2mk9HyCXWWAVnhsv4CiqWuHPpump",
     "5tAyKnambUpmv7gYPwwBLmjPPdtS2ogrWvmJCntSSpCX",
-    "8W1iJsknSoHeCrcHbqLTB9MnuBdzzhKX3mo8cjnSkkim"
+    "8W1iJsknSoHeCrcHbqLTB9MnuBdzzhKX3mo8cjnSkkim",
+    "BRRktKPa8m4dMrQ1fT6fLJABQjYUqLaEhPuMHxUvpump",
+    "8dUqZ1dwPZUF2eGAUN4UotMnnrxrxRoS7gCyctFLpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -612,7 +614,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795833782,
+    "last_run": 1795834386,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
