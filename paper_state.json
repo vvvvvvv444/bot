@@ -9,8 +9,8 @@
       "cost": 12.5,
       "qty": 19950.554545614148,
       "ts": 1795830760.0475771,
-      "last": 0.0009204,
-      "last_seen": 1795849512.9626725,
+      "last": 0.0009295,
+      "last_seen": 1795850117.976082,
       "peak": 0.0009893,
       "pair": "Br6X4CcmyiJ3Sfi5p66Arx5P1euPQrG9wGt7RknjLq83",
       "partial": true,
@@ -21,7 +21,6 @@
   "day": "2026-11-28",
   "day_pnl": 5.251624374151103,
   "seen": [
-    "2rLApcMZYTpPib7gi3manuL9oEpHbuBm5GDdmVeCpump",
     "HPrtvSXbb2cAM48kU4q7NAT75qwr1RrwzBs9UsCgpump",
     "pHicNjX5U2Aq9E2BEnW56VLtNyv6NTXWZ485KJgDW9C",
     "Gb5PN7CtQ4AhmLAdnpPNTVHDZJrRmGqRsGbEEsqMpump",
@@ -520,7 +519,8 @@
     "4HEfa8ytHJk75E4qdThEbtNdyGRg2qfQHMo8nu2Cpump",
     "ACP9Kkvh3ShCawmVcEJQ7mr93uNF1uvTP1yvvivApump",
     "EjdrRG2si1FQ3Bme5g6WSYNHJDrsKUrbGB4Z5xaopump",
-    "ArrsHWAybe2qPLwMFpmcxf5GaT19ZQJ7bnPSyKhJFsEt"
+    "ArrsHWAybe2qPLwMFpmcxf5GaT19ZQJ7bnPSyKhJFsEt",
+    "HmGQsYJyeiWrV6jABUY2Cb3bEmVxwk6LzVxCchsCpump"
   ],
   "archive": {
     "strategy": "v1",
@@ -621,7 +621,7 @@
     ]
   },
   "meta": {
-    "last_run": 1795849513,
+    "last_run": 1795850118,
     "mode": "PAPER",
     "strategy": "v2",
     "start_balance": 1000,
